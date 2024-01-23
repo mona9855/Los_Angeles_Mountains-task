@@ -1,3 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+
+html {
+  @apply scroll-smooth
+}
+
+div.slick-slide {
+  @apply px-2
+}
+
+.slick-dots li.slick-active button:before {
+  @apply !text-white
+}
+
+.slick-dots li button:before {
+  @apply !text-gray-200
+}
+
+.mountainButton.active {
+  @apply !underline !bg-titleNumber !text-mountainActive
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
